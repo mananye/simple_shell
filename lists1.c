@@ -97,6 +97,7 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 			return (node);
 		node = node->next;
 	}
+	return (NULL);
 }
 
 /**
@@ -119,4 +120,3 @@ ssize_t get_node_index(list_t *head, list_t *node)
 	}
 	return (-1);
 }
-
